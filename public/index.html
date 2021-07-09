@@ -1,67 +1,352 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/dist/style.css">
-	<script src="assets/dist/runtime.js"></script>
-	<script src="assets/dist/script.js"></script>
-	<title>Título del documento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
+    <title>Android</title>
 </head>
+
 <body>
-	<div class="container mt-4">
-		<div class="jumbotron">
-			<h1 class="display-4">Plantilla de Bootstrap</h1>
-			<p class="lead">Puedes utilizar esta plantilla para iniciar un proyecto con Bootstrap</p>
-			<hr class="my-4">
-			<p>Revisa más información en la página del repositorio.</p>
-			<a href="https://github.com/ead-codigo-2020/bootstrap-starter" class="btn btn-primary btn-lg" role="button">Ver el repositorio</a>
-			<button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#page-modal">Prueba ventana modal</button>
-		</div>
-	</div>
-	<div class="container my-4">
-		<h2 class="display-4">Ejemplo de carrusel</h2>
-		<p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, repudiandae incidunt numquam ab odio laudantium.</p>
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="https://picsum.photos/seed/1/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			  <div class="carousel-item">
-				<img src="https://picsum.photos/seed/2/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			  <div class="carousel-item">
-				<img src="https://picsum.photos/seed/3/1110/625" class="d-block w-100" alt="Foto aleatoria">
-			  </div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Anterior</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Siguiente</span>
-			</a>
-		  </div>
-	</div>
-	<div id="page-modal" class="modal fade" tabindex="-1" aria-hidden="true" aria-labelledby="#page-modal__title">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 id="page-modal__title" class="modal-title">Título de la ventana modal</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Este es un ejemplo de ventana modal</p>
-					<p>Sirve para comprobar el funcionamiento de las funcionalidades con javascript</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				</div>
-			</div>
-		</div>
-	</div>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png" width="26" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Android
+        </a>
+        <p class="nav-item sobre">Sobre nosotros</p>
+    </nav>
+
+    <div align="justify" id="item-1" class="jumbotron noDisplay">
+        <h1 align="left" class="display-4">Inicios e Historia</h1>
+        <br>
+        <hr class="my-4">
+        <p>En julio de 2005, la multinacional Google compra Android Inc. El 5 de noviembre de 2007 se crea la Open Handset Alliance, un consorcio de 78 compañías de hardware, software y telecomunicaciones dedicadas al desarrollo de estándares abiertos para
+            dispositivos móviles. Ese mismo día también se anunció la primera versión del sistema operativo: Android 1.0 Apple Pie. Los terminales con Android no estarían disponibles hasta el año 2008 y Google liberó la mayoría del código de Android bajo
+            la licencia Apache, una licencia libre y de código abierto.
+        </p>
+        <p>Con respecto a la marca tanto el nombre Android (androide en español) como Nexus One hacen alusión a la novela de Philip K. Dick ¿Sueñan los androides con ovejas eléctricas?, que posteriormente fue adaptada al cine como Blade Runner (1982). Tanto
+            el libro como la película se centran en un grupo de androides llamados replicantes del modelo Nexus 6. El logotipo es el robot Andy.
+        </p><br>
+        <center>
+            <img class="img-fluid" src="assets/img/logo1.png" alt=""><br><br>
+            <hr class="my-4">
+            <img class="img-fluid" src="assets/img/logo2.png" alt=""><br><br>
+            <hr class="my-4">
+            <img class="img-fluid" src="assets/img/logo3.png" alt="">
+            <br><br>
+        </center>
+
+
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="item-2" class="jumbotron noDisplay">
+        <h1 class="display-4">Codigos y Versiones</h1>
+        <br>
+        <hr class="my-4">
+        <p>Android, al contrario que otros sistemas operativos para dispositivos móviles como iOS o Windows Phone, se desarrolla de forma abierta y se puede acceder tanto al código fuente​ como a la lista de incidencias donde se pueden ver problemas todavía
+            no resueltos y reportar problemas nuevos. El que se tenga acceso al código fuente no significa que se pueda tener siempre la última versión de Android en un determinado móvil, ya que el código para soportar el hardware (controladores) de cada
+            fabricante normalmente no es público, así que faltaría un trozo básico del firmware para poder hacerlo funcionar en dicho terminal, y porque las nuevas versiones de Android suelen requerir más recursos, por lo que los modelos más antiguos
+            quedan descartados por razones de poca RAM, velocidad de procesador, etc.
+        </p><br>
+        <center>
+            <img class="img-fluid" src="assets/img/codigo1.png" alt=""><br><br><br>
+        </center>
+        <h3 class="display-4">Terminales de Android</h3>
+        <hr class="my-4">
+        <p>Las bibliotecas escritas en lenguaje C incluyen un administrador de interfaz gráfica (surface manager), un framework OpenCore, una base de datos relacional SQLite, una Interfaz de programación de API gráfica OpenGL ES 2.0 3D, un motor de renderizado
+            WebKit, un motor gráfico SGL, SSL y una biblioteca estándar de C Bionic. El sistema operativo está compuesto por 12 millones de líneas de código, incluyendo 3 millones de líneas de XML, 2.9 millones de líneas de lenguaje C, 2.2 millones de
+            líneas de Java y 1.77 millones de líneas de C++.
+        </p><br>
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="item-3" class="jumbotron noDisplay">
+        <h1 class="display-4">Aplicaciones</h1>
+        <br>
+        <hr class="my-4">
+        <p>Android tiene una gran comunidad de desarrolladores creando aplicaciones para extender la funcionalidad de los dispositivos. A principios de 2018 se superaban ya los dos millones de aplicaciones disponibles en Google Play Store, la tienda de aplicaciones
+            oficial de Android; a estas habría que añadir las disponibles en otras tiendas no oficiales, como Galaxy Store de Samsung, Aptoide, APK Pure y otras.​ Google Play es la tienda de aplicaciones en línea administrada por Google, aunque existe
+            la posibilidad de obtener software externamente. La tienda F-Droid es completamente de código abierto así como sus aplicaciones, una alternativa al software privativo.
+        </p><br>
+        <p>
+            Todas las aplicaciones están escritas en lenguaje de programación Java. Los desarrolladores tienen acceso completo a los mismas API del entorno de trabajo usados por las aplicaciones base. La arquitectura está diseñada para simplificar la reutilización
+            de componentes; cualquier aplicación puede publicar sus capacidades y cualquier otra aplicación puede luego hacer uso de esas capacidades (sujeto a reglas de seguridad del framework). Las bibliotecas de Android incluyen un conjunto de bibliotecas
+            de C y C++ usadas por varios componentes del sistema. Estas características se exponen a los desarrolladores a través del marco de trabajo de aplicaciones de Android. Algunas son: System C library (implementación biblioteca C estándar), bibliotecas
+            de medios, bibliotecas de gráficos, 3D y SQLite, entre otras.
+        </p><br>
+        <p>
+            Android ha sido diseñado para permitir a los usuarios crear distintas aplicaciones aprovechando las distintas características y utilidades de sus teléfonos. Por ejemplo, al crear una utilidad con Android, un usuario podrá usar la función de llamada de
+            su teléfono, o la función de mensajería de texto, la de la cámara de fotos, etc. La idea es que se puedan crear todo tipo de aplicaciones usando todas las funciones del teléfono que se quiera, y combinandolas como se quiera. Además, Android
+            optimiza los recursos internos del teléfono (memoria, hardware, etc.) con el objetivo de que la aplicación funcione de la mejor manera posible.
+        </p><br>
+        <center>
+            <img class="img-fluid" src="assets/img/apliacion1.png" alt=""><br>
+            <label for="">Aplicaciones más descargadas a través de Google Play en 2019</label><br><br><br>
+        </center>
+
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="item-4" class="jumbotron noDisplay">
+        <h1 class="display-4">Caracteristicas</h1>
+        <br>
+        <hr class="my-4">
+        <p>Android es un sistema operativo móvil basado en núcleo Linux y otros software de código abierto. Fue diseñado para dispositivos móviles con pantalla táctil, como teléfonos inteligentes, tabletas, relojes inteligentes (Wear OS), automóviles (Android
+            Auto) y televisores (Android TV). Dentro de la propia arquitectura del sistema, podemos destacar sus principales componentes:
+        </p><br>
+        <div class="container-fluid">
+            <p><b>Núcleo Linux: </b> El núcleo del sistema es Linux y actúa como una capa de abstracción entre el hardware del dispositivo y las aplicaciones instaladas. Además, el sistema operativo de Google depende de Linux para otros servicios básicos
+                como la seguridad, gestión de memoria, gestión de procesos, pila de red o controladores.</p>
+            <p><b>Runtime: </b> El sistema operativo de Google para dispositivos móviles incluye un conjunto de bibliotecas que proporcionan la mayor parte de las funciones disponibles en las bibliotecas base del lenguaje de programación Java. Cada aplicación
+                Android corre su propio proceso con su instancia a la máquina virtual Dalvik. Esta máquina ejecutaba hasta la versión 5.0 archivos en formato .dex, pero a partir de esa versión se utilizar el ART, que compila totalmente al momento de instalación
+                de la aplicación.
+            </p>
+            <p><b>Bibliotecas: </b> El sistema operativo Android incluye un conjunto de bibliotecas de C o C++ que son utilizadas por varios componentes del sistema. Estas características se exponen a los desarrolladores a través del marco de las aplicaciones
+                de Android. Entre estas bibliotecas, caben destacara System C, bibliotecas de medios, de gráficos, 3 D o SQLite, entre otras.
+            </p>
+            <p><b>Aplicaciones: </b>Android cuenta con ciertas aplicaciones base que permiten el uso de las funciones básicas de un dispositivo como son, correo electrónico, mensajes de texto SMS, calendario, mapas, navegador, contactos y otros. Aplicaciones
+                desarrolladas en lenguaje Java. Además Google permite que otros desarrolladores tengan acceso a las mismas API del entorno de trabajo utilizadas por las aplicaciones base. Y es que la arquitectura de Android está diseñada para simplificar
+                la reutilización de componentes. Es decir, cualquier aplicación puede publicar sus capacidades y que otras aplicaciones puedan reutilizarlas dentro de unas reglas de seguridad.
+            </p><br>
+        </div>
+        <center>
+            <img class="img-fluid" src="assets/img/caracteristicas1.png" alt=""><br><br><br>
+        </center>
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="item-5" class="jumbotron noDisplay">
+        <h1 class="display-4">FRAGMENTACIÓN DE MERCADO Y VERSIONES</h1>
+        <br>
+        <hr class="my-4">
+        <center>
+            <img class="img-fluid" src="assets/img/frag1.png" alt="">
+            <p>
+                Aquí te presentamos la historia, versiones y aspectos importantes de Android: de Apple Pie 1.0 a Android 10.
+            </p>
+            <hr class="my-4">
+
+            <h4 class="display-2">2008</h4><br>
+            <p>En agosto aparece el primer smartphone con sistema operativo Android, el HTC Dream, rebautizado como T-Mobile G1 en Estados Unidos, donde se puso en venta oficialmente el 22 de octubre. En 6 meses se vendieron un millón de unidades en Estados
+                Unidos y 100.000 más en Gran Bretaña. Android entraba con fuerza en el mercado de los terminales inteligentes.</p>
+            <img src="assets/img/frag2.png" alt="" class="img-fluid">
+            <hr class="my-4">
+
+            <h4 class="display-2">2009</h4><br>
+            <p><b> Android 1.1 Banana Bread: </b> Apenas 3 meses después del lanzamiento de Android 1.0 llegaba la primera actualización, Android 1.1 Banana Bread, concretamente en febrero. No añadía grandes novedades, pero sí corregía numerosos fallos y
+                bugs detectados en la primera versión e introducía un concepto poco usado por los rivales que buscaba facilitar la vida al usuario: las actualizaciones automáticas, con las que resultaba muy simple mantener todo el software del terminal
+                al día.
+            </p>
+            <p><b>Android 1.5 Cupcake:</b> En abril aparece la primera actualización de gran calado, Android 1.5 Cupcake, y con ella se inicia la golosa nomenclatura de Google para con su SO móvil. Se realizaron cambios casi imperceptibles sobre algunos
+                elementos de la interfaz, pero las novedades más interesantes llegaron a nivel de usabilidad con nuevas características.
+            </p><br><br>
+            <img class="img-fluid" src="assets/img/frag3.png" alt=""><br><br><br>
+            <p>Además de añadir el teclado en pantalla y la grabación y reproducción de vídeos, Google abrió ambas funcionalidades a los desarrolladores, que fueron capaces de crear sus propias versiones tanto del teclado en pantalla como de la interfaz
+                del reproductor de vídeo.</p>
+            <img class="img-fluid" src="assets/img/frag4.png" alt=""><br><br><br>
+            <p><b>Android 1.6 Donut: </b>Apareció en septiembre con algunas novedades adicionales. Toda la interfaz volvió a sufrir pequeños retoques visuales más algunos nuevos elementos, pero lo realmente atractivo estaba en el núcleo del SO
+            </p>
+            <p><b>Android 2.0 Eclair: </b> Apenas dos meses después, en noviembre, aparecía Android 2.0 Eclair, uno de los cambios más sustanciales sufridos por Android tanto a nivel de diseño como de arquitectura interna. Era una versión dirigida a dispositivos
+                de mayor tamaño en un tiempo en el que los fabricantes empezaban a diversificar su oferta.</p>
+            <br><br>
+            <img class="img-fluid" src="assets/img/frag5.png" alt=""><br><br><br>
+            <p>En octubre Motorola lanzaba Droid a través de la operadora Verizon, un smartphone con resolución 854x480 que pretendía competir contra el iPhone. La venta de 250.000 terminales sólo la primera semana en Estados Unidos supuso uno de los más
+                grandes éxitos en la historia de la compañía.
+            </p>
+            <hr class="my-4">
+
+            <h4 class="display-2">2010</h4><br>
+            <p>En mayo aparecería el HTC Wildfire HTC se había convertido en el principal aliado de Android, pero se atisbaba la llegada de un duro competidor en el campo de la fabricación de hardware: Samsung. Su Galaxy S logró vender más de 10 millones
+                de copias y fue uno de los principales motivos, junto con la pujanza del hardware de HTC, para que Android sobre pase a iOS en cuota de mercado por primera vez.</p>
+            <img class="img-fluid" src="assets/img/frag6.png" alt=""><br><br><br>
+            <p><b>Android 2.2 Froyo: </b> El Nexus One fue precisamente el primer móvil que fue actualizado, lo que dejaba entrever cuál sería la política de Google desde aquel entonces.</p>
+            <img class="img-fluid" src="assets/img/frag7.png" alt=""><br><br><br>
+            <p>Ese mismo año verían la luz las primeras tabletas equipadas con el sistema operativo móvil de Google, entre ellas la Samsung Galaxy Tab, de la cual han aparecido numerosas versiones posteriores. Pretendía ser la competencia directa del iPad.</p>
+            <img class="img-fluid" src="assets/img/frag8.png" alt=""><br><br><br>
+            <p><b>Android 2.3 Gingerbread: </b> Para finalizar el año, Google lanzó una nueva revisión del sistema operativo, con la idea continuar en la política de actualizaciones acompañadas por el lanzamiento de nuevos teléfonos, esta vez aliados con
+                Samsung. Gingerbread se convertiría en la versión de Android más extendida durante los siguientes años. </p>
+            <img class="img-fluid" src="assets/img/frag9.png" alt=""><br><br><br>
+            <p>Gingerbread llegó de la mano del Google Nexus S, un derivado de la exitosa línea de terminales Galaxy S de Samsung. Fue el primero en eliminar la bola de navegación hardware del teléfono, por lo que la interacción con el sistema operativo
+                paso a ser totalmente táctil a través de la pantalla.</p>
+            <img class="img-fluid" src="assets/img/frag10.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2011</h4><br>
+            <p><b>Android 3.0 Honeycomb: </b> Se trata de una actualización específica para tabletas, no compatible con teléfonos, que introducía las líneas maestras de la interfaz en el futuro. Las versiones 3.1 y 3.2 mantuvieron el mismo nombre y fueron
+                básicamente un conjunto de correcciones.
+            </p>
+            <img class="img-fluid" src="assets/img/frag11.png" alt=""><br><br><br>
+            <p><b>Android 4.0 Ice Cream Sandwich: </b> Fue uno de los cambios más importantes sufridos por Android en teléfonos, y es considerado como el momento en el que adquirió su mayoría de edad. Ese año superó la cuota de mercado de BlackBerry y se
+                convirtió en el sistema operativo móvil más usado del mundo.
+            </p>
+            <img class="img-fluid" src="assets/img/frag12.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2012</h4><br>
+            <p><b>Android 4.1 Jelly Bean: </b> En el I/O de Google 2012 celebrado en julio aparece Android 4.1 Jelly Bean, un lanzamiento que reformula la estrategia de Android en tabletas añadiendo nuevas características. A primera vista los cambios no
+                son palpables, pero los hubo e importantes. Destaca la desaparición del soporte para Flash Player.
+            </p>
+            <img class="img-fluid" src="assets/img/frag13.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2013</h4><br>
+            <p>La división Android de Google cambia de dirección. Desde marzo es Sundar Pichai en sustitución de Andy Rubin quien asume el mando. El 24 de julio Google anunciaba Android 4.3, que mantenía el nombre de Jelly Bean pese a los rumores sobre Android
+                5. También pretende consolidar Android como un sistema operativo capaz de hacer correr juegos.
+            </p>
+            <img class="img-fluid" src="assets/img/frag14.png" alt=""><br><br><br>
+            <p><b>Android 4.4 KitKat: </b> Hay muchas versiones y los fabricantes tienen dificultades para adaptar sus productos a los requisitos de las últimas entregas, por lo que muchos usuarios no se actualizan. Pese a los rumores y los vaivenes con
+                el nombre (esta versión fue conocida como Key Lime Pie antes de que Google y Nestlé sellaran su particular acuerdo).
+            </p>
+            <img class="img-fluid" src="assets/img/frag15.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2014</h4><br>
+            <p><b>Android 5.0 Lollipop: </b> Android amplía sus horizontes se instala en todo tipo de dispositivos: Android TV, smartwatches, Android Auto y otros dispositivos para el entretenimiento como Nexus Player. Uno de sus rasgos más llamativos fue
+                la inclusión Material Design, un nuevo lenguaje de diseño que unifica la experiencia de uso en cualquier tipo de dispositivo.
+            </p>
+            <img class="img-fluid" src="assets/img/frag16.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2015</h4><br>
+            <p>No fue hasta marzo de 2015 que estuvo disponible la esperada actualización Android 5.1 Lollipop, con la que se mejoraba el rendimiento del procesador y se aumentaba la autonomía de la batería.</p>
+            <img class="img-fluid" src="assets/img/frag17.png" alt=""><br><br><br>
+            <p><b>Android 6.0 Marshmallow: </b> El lanzamiento de la versión 6.0 del sistema se estima para finales del segundo semestre del año, aunque los desarrolladores ya pueden descargar el SDK. La Developer Preview 3 dispone de un nuevo paquete de
+                fondos de pantalla y una nueva animación de inicio.
+            </p>
+            <img class="img-fluid" src="assets/img/frag18.png" alt=""><br><br><br>
+            <hr class="my-4">
+
+            <h4 class="display-2">2016</h4><br>
+            <p><b>Android 7.0 Nougat: </b> Como siempre viene con numerosas novedades y mejoras tanto en el apartado funcional como el estético.
+            </p>
+            <hr class="my-4">
+
+            <h4 class="display-2">2017</h4><br>
+            <p><b>Android 8.0 Oreo: </b> Una nueva muestra de la compañía americana con el mundo del dulce, esta vez adoptando el nombre de unas populares galletas. Tras un par de versiones para desarrolladores vio la luz definitivamente en agosto de 2017
+                para dispositivos Nexus y Pixel compatibles.
+            </p>
+            <hr class="my-4">
+
+            <h4 class="display-2">2018</h4><br>
+            <p><b>Android 9 Pie: </b> Tras varios meses con versiones previas con el nombre en clave de P, Google anunció finalmente en agosto del año 2018 la siguiente iteración de su sistema operativo móvil. Esta vez tan solo se eligió el nombre de un
+                tipo de postre, una simplificación en sintonía con los cambios aparecidos enfocados a facilitar el manejo y el mayor aprendizaje del sistema de tus hábitos y costumbres mediante la inteligencia a artificial al tiempo que se busca un comportamiento
+                menos invasivo y absorbente en sintonía con los hábitos de vida saludables.
+            </p>
+            <hr class="my-4">
+
+            <h4 class="display-2">2019</h4><br>
+            <p>
+                Como va siendo habitual, marzo volvió a ser el mes de los anuncios de Google respecto a su sistema operativo móvil con la presentación de Android Q.
+            </p>
+            <p><b>Android 10: </b> Google elimina las nomenclaturas relacionadas con postres y dulces para quedarse con la escueta y simple nueva denominación. Los primeros teléfonos en recibir la nueva versión serían los Google Pixel de la misma casa. Para
+                el resto de terminales todo dependería de sus fabricantes.
+            </p>
+            <img class="img-fluid" src="assets/img/frag19.png" alt=""><br><br><br>
+            <p>En un principio, Android era eminentemente un sistema operativo pensado para usar con teclado, y gracias a un cursor poder navegar entre las aplicaciones. Desde su comienzo, Android ha sido altamente personalizable. Poco después, antes del
+                lanzamiento del primer teléfono Android, esta filosofía cambió para convertirse en eminentemente táctil, y poder competir contra el iPhone.
+            </p><br>
+            <p>Google lleva desde finales de 2010 informando de la distribución de versiones de Android para que los desarrolladores sepan sobre qué versiones del sistema operativo centran sus esfuerzos, y para que los usuarios vean cómo se va distribuyendo
+                cada nueva actualización de Android.
+            </p>
+            <img class="img-fluid" src="assets/img/frag20.png" alt="">
+            <p>Gráfico de uso de las distintas versiones de Android desde los años 2010 hasta 2018
+            </p>
+
+
+
+            <br><br><br>
+        </center>
+
+
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="item-6" class="jumbotron noDisplay">
+        <h1 class="display-4">Dispositivos</h1>
+        <br>
+        <hr class="my-4">
+        <p>Actualmente Android funciona en una gran variedad de dispositivos como teléfonos móviles, tablets, televisores, auriculares, consolas, computadores, cámaras, proyectores, GPS, mp4, refrigeradores, autos, impresora, teléfonos fijos, espejos, bicicletas,
+            hornos, entre otros. Esto es posible gracias a la característica colaborativa que impulsa la compañía, permitiendo a sus usuarios a través de las aplicaciones acceder o enlazar a los distintos dispositivos.
+        </p><br>
+        <center>
+            <img class="img-fluid" src="assets/img/dispositivo1.png" alt=""><br><br><br>
+        </center>
+
+        <p><b>Android Auto: </b> aplicación que te permite conectar de manera fácil y rápida un coche con cualquier teléfono con sistema operativo Android
+        </p>
+
+        <a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div align="justify" id="sobre" class="jumbotron noDisplay">
+        <h1 class="display-4">Sobre nosotros</h1>
+        <br>
+        <hr class="my-4">
+        <p>Este sitio web se desarrolló en el contexto del taller Diseño desde el Código impartido por los profesores Basilio Cáceres y Felipe Lavín en la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso. Fue diseñado
+            y codificado por los alumnos Joaquín Mansilla, María Consuelo Pulgar y Valentina Godoy.</p>
+        <br><br>
+        <h5>Integrantes</h5>
+        <p>Joaquín Mansilla</p>
+        <p>Valentina Godoy</p>
+        <p>María Consuelo Pulgar</p>
+        <br><br>
+        <img class="img-fluid" src="assets/img/logo ead.png" alt=""><br><br><br>
+        <img class="img-fluid" src="assets/img/logo-puvc.png" alt=""><br><br><br>
+        <h5>BANCO DE IMÁGENES</h5>
+        <p>https://unsplash.com/</p>
+        <p><a href='https://www.freepik.es/vectores/fondo'>Vector de Fondo creado por freepik - www.freepik.es</a>
+        </p>
+        <br>
+        <h5>Bibliografía</h5>
+        <a href="https://www.malavida.com/es/analisis/la-historia-de-android#gref">https://www.malavida.com/es/analisis/la-historia-de-android#gref</a><br>
+        <a href="https://www.nts-solutions.com/blog/dispositivos-android.html">https://www.nts-solutions.com/blog/dispositivos-android.html</a><br>
+        <a href="https://notasprensa.top/que-es-dalvik/" target="_blank" rel="noopener noreferrer">https://notasprensa.top/que-es-dalvik/</a><br>
+        <a href="https://www.xatakandroid.com/sistema-operativo/android-10-esta-1-cada-10-dispositivos-ultimos-datos-distribucion-versiones" target="_blank" rel="noopener noreferrer">https://www.xatakandroid.com/sistema-operativo/android-10-esta-1-cada-10-dispositivos-ultimos-datos-distribucion-versiones</a><br>
+        <a href="https://www.malavida.com/es/analisis/la-historia-de-android#gref" target="_blank" rel="noopener noreferrer">https://www.malavida.com/es/analisis/la-historia-de-android#gref</a><br>
+        <a href="https://www.xatakandroid.com/aplicaciones-android/20-apps-juegos-android-descargadas-mundo-segundo-trimestre-2019-sensor-tower" target="_blank" rel="noopener noreferrer">https://www.xatakandroid.com/aplicaciones-android/20-apps-juegos-android-descargadas-mundo-segundo-trimestre-2019-sensor-tower</a><br>
+        <a href="https://carnovo.com/es/guias/tutorial-de-android-auto-movil-coche/" target="_blank" rel="noopener noreferrer">https://carnovo.com/es/guias/tutorial-de-android-auto-movil-coche/</a><br>
+        <a href="https://es.wikipedia.org/wiki/Android" target="_blank" rel="noopener noreferrer">https://es.wikipedia.org/wiki/Android</a><br>
+        <a href="https://www.pcworld.es/articulos/smartphones/iphone-vs-android-cuota-de-mercado-3692825/" target="_blank" rel="noopener noreferrer">https://www.pcworld.es/articulos/smartphones/iphone-vs-android-cuota-de-mercado-3692825/</a><br>
+        <br><br><br><a class="btn btn-primary btn-lg volver" role="button">Volver</a>
+    </div>
+
+    <div class="container" id="menu">
+        <div id="android" class="">
+            <img class="img-android" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/872px-Android_robot.svg.png">
+        </div>
+        <center>
+            <div class="row">
+                <div class="columna-1 col-md-3">
+                    <a class="item-1">Inicios e Historia</a>
+                    <br><br><br>
+                    <a class="item-2">Códigos y Versiones</a>
+                    <br><br><br>
+                    <a class="item-3">Aplicaciones</a>
+                    <br><br>
+                </div><br><br><br>
+                <div class="columna-2 col-md-3 offset-md-6">
+                    <a class="item-4">Caracteristicas</a>
+                    <br><br><br>
+                    <a class="item-5">Fragmentación de mercado</a>
+                    <br><br><br>
+                    <a class="item-6">Dispositivos</a>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <footer>
+        Android © Todos los derechos reservados - 2020
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
